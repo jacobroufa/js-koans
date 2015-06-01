@@ -27,6 +27,15 @@ the content this project utilizes exists across 2 repositories:
 this project was originally inspired by [Jim Weirich's](http://en.wikipedia.org/wiki/Jim_Weirich)
 [Ruby Koans project](https://github.com/neo/ruby_koans) <3 <3 <3
 
+## up and running
+
+js-koans is an [express](http://expressjs.com/) application.
+
+```
+$ npm install
+$ npm start
+```
+
 ## how can i help?
 
 js-koans is in the very priliminary stages of development. helpful
