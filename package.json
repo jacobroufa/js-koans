@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "express": "^4.12.4",
-    "jade": "^1.10.0"
+    "jade": "^1.10.0",
+    "require-tree": "^1.0.1"
   },
   "devDependencies": {}
 }
