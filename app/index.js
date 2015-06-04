@@ -1,11 +1,13 @@
+const fs = require('fs');
 const path = require('path');
 
 const express = require('express');
 const app = express();
 
-const require_tree = require('require-tree');
 const modulePath = path.join(__dirname, 'modules');
-const categories = require_tree(modulePath);
+const categories = fs.readdirSync(modulePath);
+
+const util = require('./util');
 
 app.use(express.static('public'));
 
@@ -17,7 +19,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/:category', function(req, res){
-  res.send(JSON.stringify(categories[req.params.category]));
+  res.send(util.build_cat(req.params.category));
 });
 
 module.exports = app;
