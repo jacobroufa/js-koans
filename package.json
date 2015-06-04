@@ -13,11 +13,14 @@
     "url": "git@github.com:ashleygwilliams/js-koans.git"
   },
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "postinstall": "npm run submodule:update",
+    "submodule:update": "git submodule update --init"
   },
   "dependencies": {
     "express": "^4.12.4",
     "jade": "^1.10.0",
+    "markdown": "^0.5.0",
     "require-tree": "^1.0.1"
   },
   "devDependencies": {}
