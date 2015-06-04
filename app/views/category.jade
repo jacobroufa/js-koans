@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= category.name
+  p!= category.instructions
+  .row
+    .one-half.column
+      textarea= category.questions
+    .one-half.column
+      textarea= category.tests
