@@ -1,0 +1,6 @@
+[submodule "data/js-assessment"]
+	path = data/js-assessment
+	url = https://github.com/rmurphey/js-assessment
+[submodule "data/js-assessment-answers"]
+	path = data/js-assessment-answers
+	url = https://github.com/rmurphey/js-assessment-answers
