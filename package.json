@@ -13,9 +13,12 @@
     "url": "git@github.com:ashleygwilliams/js-koans.git"
   },
   "scripts": {
+    "prestart": "npm run hint && npm run jscs",
     "start": "node index",
     "postinstall": "npm run submodule:update",
-    "submodule:update": "git submodule update --init"
+    "submodule:update": "git submodule update --init",
+    "hint": "jshint . || true",
+    "jscs": "jscs index.js && jscs app || true"
   },
   "dependencies": {
     "express": "^4.12.4",
@@ -23,5 +26,8 @@
     "markdown": "^0.5.0",
     "require-tree": "^1.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "jshint": "^2.8.0"
+  }
 }
